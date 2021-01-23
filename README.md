@@ -74,7 +74,8 @@ Observer3收到更新
 ```
 <br>
 <br>
-未完待续。。。
+
+实例源码：<https://github.com/buloo/DesignPatterns>
 <br>
 <br>
 
