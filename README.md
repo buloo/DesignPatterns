@@ -72,8 +72,6 @@ Observer1收到更新
 Observer2收到更新
 Observer3收到更新
 ```
-
-<br>
-<br>
+***
 学习资料：<br>
 HeadFirst 设计模式
