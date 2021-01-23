@@ -1,9 +1,9 @@
 package com.wy.designpatterns;
 
-import com.wy.designpatterns.strategy.CurrentConditionsDisplay;
-import com.wy.designpatterns.strategy.StatisisDisplay;
-import com.wy.designpatterns.strategy.ThirdpartyDisplay;
-import com.wy.designpatterns.strategy.WeatherImpl;
+import com.wy.designpatterns.observer.CurrentConditionsDisplay;
+import com.wy.designpatterns.observer.StatisisDisplay;
+import com.wy.designpatterns.observer.ThirdpartyDisplay;
+import com.wy.designpatterns.observer.WeatherImpl;
 
 /**
  * @Author wangyue8

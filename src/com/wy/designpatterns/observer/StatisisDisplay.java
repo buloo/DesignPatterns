@@ -1,4 +1,4 @@
-package com.wy.designpatterns.strategy;
+package com.wy.designpatterns.observer;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -8,12 +8,12 @@ import java.util.Observer;
  * @Author wangyue8
  * @CreatTime 2021/1/23 14:29
  **/
-public class CurrentConditionsDisplay implements Observer , IDispaly{
+public class StatisisDisplay implements Observer , IDispaly{
   private float temperature;//温度
   private float humidity;//湿度
   private float pressure;//压力
 
-  public CurrentConditionsDisplay(Observable observable){
+  public StatisisDisplay(Observable observable){
     observable.addObserver(this);
   }
 
@@ -30,6 +30,6 @@ public class CurrentConditionsDisplay implements Observer , IDispaly{
 
   @Override
   public void dispaly() {
-    System.out.println("CurrentConditionsDisplay: temperature = " + temperature);
+    System.out.println("StatisisDisplay: temperature = " + temperature);
   }
 }

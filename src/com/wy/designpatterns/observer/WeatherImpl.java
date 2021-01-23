@@ -1,4 +1,4 @@
-package com.wy.designpatterns.strategy;
+package com.wy.designpatterns.observer;
 
 import java.util.Observable;
 
