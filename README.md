@@ -36,6 +36,7 @@ s2.diThing();执行Behavior3
 <br>
 <br>
 学习时间：2021/1/21-1/22 <br>
+代码目录：strategy
 
 ***
 #### 2. 观察者模式：
@@ -75,7 +76,7 @@ Observer3收到更新
 <br>
 <br>
 学习时间：2021/1/23 <br>
-代码目录：strategy
+代码目录：observer
 
 ***
 实例源码：<https://github.com/buloo/DesignPatterns>
