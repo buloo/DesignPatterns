@@ -27,12 +27,12 @@ interface Behavior{
 
 
 使用：
-Subject s1 = new Subject();
+Subject s1 = new Subject(); //主体1
 s1.diThing();//执行默认Behavior=
 s1.setBehavior(new Behavior2());//给主体更换行为
 s1.diThing();执行Behavior2
 
-Subject s2 = new Subject();
+Subject s2 = new Subject();//主体2
 s2.setBehavior(new Behavior3());//给主体更换行为
 s2.diThing();执行Behavior3
 ```
@@ -61,4 +61,16 @@ interface Observer {
   void update(); // 接收到主体数据变化
 }
 
+使用：
+Observable obs = new Observable();//创建主体，即被观察者
+obs.addObservable(new Observer1());//添加个体观察者1
+obs.addObservable(new Observer2());//添加个体观察者2
+obs.addObservable(new Observer3());//添加个体观察者3
+
+主体数据发生变化，通知所有个体
+obs.notifyObservers();
+
+Observer1收到更新
+Observer2收到更新
+Observer3收到更新
 ```
