@@ -1,6 +1,4 @@
-# DesignPatterns
-设计模式学习
-
+# 设计模式学习记录
 
 #### 1. 策略模式
 学习时间：2021/1/21-1/22 <br>
@@ -74,3 +72,8 @@ Observer1收到更新
 Observer2收到更新
 Observer3收到更新
 ```
+
+
+
+学习资料：<br>
+HeadFirst 设计模式
