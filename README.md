@@ -82,5 +82,39 @@ Observer3收到更新
 代码目录：observer
 
 ***
+#### 3. 装饰者模式：
+官方定义：动态地将责任附加到对象上，若要扩展功能，装饰者提供了比继承更有弹性的替代方案。<br>
+个人理解：主体实现了基本的需求，如果需要给主体扩展其他功能，直接在主体外包一层生成一个新主体，不会修改主体的内容，<br>
+设计原则：<br>
+1. 针对接口编程，不针对实现编程。（主体和扩展都使用抽象类）
+2. 多用组合，少用继承。（将所有的扩展组合到主体）
+3. 为交互对象之间的松耦合设计而努力（扩展和主体分开，互不影响）
+4. 为扩展开放，对修改关闭（只能扩展新功能，不能修改主体内容）
+伪代码： <br>
+```
+//主体-默认
+abstract Componet {
+  abstract void doIt(); 
+  abstract void doThat(); 
+}
+
+//扩展-装饰者
+abstract Decorator extends Componet{
+}
+
+使用：
+Componet1 componet1 = new Componet1();//创建，默认主体
+componet1 = new Decorator2(componet1);//装饰一个新扩展
+componet1 = new Decorator3(componet1);//装饰一个新扩展
+componet1 = new Decorator4(componet1);//装饰一个新扩展
+
+这样以来，默认的主体被加上了三个新功能
+```
+<br>
+<br>
+学习时间：2021/1/27 <br>
+代码目录：observer
+
+***
 实例源码：<https://github.com/buloo/DesignPatterns>
 <br>
