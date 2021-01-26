@@ -113,7 +113,7 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 <br>
 <br>
 学习时间：2021/1/27 <br>
-代码目录：observer
+代码目录：decorator
 
 ***
 实例源码：<https://github.com/buloo/DesignPatterns>
