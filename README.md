@@ -43,4 +43,44 @@ s2.performDo();执行Behavior3
 
 ***
 #### 2. 观察者模式：
-官方定义：定义了对象之间的一对多依赖关系，当一个对象改变状态时，它所有的依赖者都会收到通
+官方定义：定义了对象之间的一对多依赖关系，当一个对象改变状态时，它所有的依赖者都会收到通知并自动更新。<br>
+个人理解：一个主体对应很多个体，这些个体一直在观察者主体的变化。一旦主体发生变化，就会通知所有的个体，然后个体根据实际情况更新自己。<br>
+设计原则：<br>
+1. 封装变化的部分，和固定不变的部门分开。(主体的状态和个体的数量)
+2. 针对接口编程，不针对实现编程。（主体和个体都使用接口）
+3. 多用组合，少用继承。（将所有的个体组合到主体）
+伪代码： <br>
+```
+//主体-被观察者
+interface Observable {
+  void addObserver(); // 添加一个观察者
+  void deleteObserver(); // 删除一个观察者
+  void notifyObservers(); // 数据发生变化后，通知所有观察者
+}
+
+//个体-观察者
+interface Observer {
+  void update(); // 接收到主体数据变化
+}
+
+使用：
+Observable obs = new Observable();//创建主体，即被观察者
+obs.addObservable(new Observer1());//添加个体观察者1
+obs.addObservable(new Observer2());//添加个体观察者2
+obs.addObservable(new Observer3());//添加个体观察者3
+
+主体数据发生变化，通知所有个体
+obs.notifyObservers();
+
+Observer1收到更新
+Observer2收到更新
+Observer3收到更新
+```
+<br>
+<br>
+学习时间：2021/1/23 <br>
+代码目录：observer
+
+***
+实例源码：<https://github.com/buloo/DesignPatterns>
+<br>
