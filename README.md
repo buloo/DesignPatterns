@@ -116,5 +116,42 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 代码目录：decorator
 
 ***
+#### 4. 工厂模式：
+简单工厂：把创建对象的过程封装起来，放到一个对象里，提供给所有用户使用。
+工厂方法：定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。
+抽象工厂模式：提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。
+个人理解：主体实现了基本的需求，如果需要给主体扩展其他功能，直接在主体外包一层生成一个新主体，不会修改主体的内容，<br>
+设计原则：<br>
+1. 要依赖抽象，不要依赖具体类。
+2. 多用组合，少用继承。
+3. 为交互对象之间的松耦合设计而努力
+4. 类应该为扩展开放，对修改关闭
+5. 针对接口编程，不针对实现编程
+伪代码： <br>
+```
+//主体-默认
+abstract Componet {
+  abstract void doIt(); 
+  abstract void doThat(); 
+}
+
+//扩展-装饰者
+abstract Decorator extends Componet{
+}
+
+使用：
+Componet1 componet1 = new Componet1();//创建，默认主体
+componet1 = new Decorator2(componet1);//装饰一个新扩展
+componet1 = new Decorator3(componet1);//装饰一个新扩展
+componet1 = new Decorator4(componet1);//装饰一个新扩展
+
+这样以来，默认的主体被加上了三个新功能
+```
+<br>
+<br>
+学习时间：2021/1/27 <br>
+代码目录：decorator
+
+***
 实例源码：<https://github.com/buloo/DesignPatterns>
 <br>

@@ -8,6 +8,10 @@ import com.wy.designpatterns.decorator.Milk;
 import com.wy.designpatterns.decorator.Mocha;
 import com.wy.designpatterns.decorator.Soy;
 import com.wy.designpatterns.decorator.Whip;
+import com.wy.designpatterns.factory.AbsPizza;
+import com.wy.designpatterns.factory.ChicagoStyleCheesePizza;
+import com.wy.designpatterns.factory.ChicagoStylePizzaStore;
+import com.wy.designpatterns.factory.NYStylePizzaStore;
 import com.wy.designpatterns.observer.CurrentConditionsDisplay;
 import com.wy.designpatterns.observer.StatisisDisplay;
 import com.wy.designpatterns.observer.ThirdpartyDisplay;
@@ -45,20 +49,30 @@ public class RootTest {
     //starbuzz咖啡厅
     //购买咖啡时，可以直接购买基本款，也可以计入各种调料，比如多加一份奶、摩卡等等，
     //调料也要收费
-    Beverage beverage = new EspressoBeverage();
-    System.out.println(beverage.getDescription() + " $"+beverage.cost());
+//    Beverage beverage = new EspressoBeverage();
+//    System.out.println(beverage.getDescription() + " $"+beverage.cost());
+//
+//    Beverage darkRoast = new DarkRoastBeverage();
+//    darkRoast = new Mocha(darkRoast);
+//    darkRoast = new Mocha(darkRoast);
+//    darkRoast = new Whip(darkRoast);
+//    System.out.println(darkRoast.getDescription() + " $"+darkRoast.cost());
+//
+//    Beverage houseBlend = new HouseBlendBeverage();
+//    houseBlend = new Soy(houseBlend);
+//    houseBlend = new Mocha(houseBlend);
+//    houseBlend = new Whip(houseBlend);
+//    System.out.println(houseBlend.getDescription() + " $"+houseBlend.cost());
 
-    Beverage darkRoast = new DarkRoastBeverage();
-    darkRoast = new Mocha(darkRoast);
-    darkRoast = new Mocha(darkRoast);
-    darkRoast = new Whip(darkRoast);
-    System.out.println(darkRoast.getDescription() + " $"+darkRoast.cost());
 
-    Beverage houseBlend = new HouseBlendBeverage();
-    houseBlend = new Soy(houseBlend);
-    houseBlend = new Mocha(houseBlend);
-    houseBlend = new Whip(houseBlend);
-    System.out.println(houseBlend.getDescription() + " $"+houseBlend.cost());
+    //工厂模式-工厂方法
+    NYStylePizzaStore nyStylePizzaStore = new NYStylePizzaStore();
+    ChicagoStylePizzaStore chicagoStylePizzaStore = new ChicagoStylePizzaStore();
+
+    AbsPizza nyPizza = nyStylePizzaStore.orderPizza("cheese");
+    System.out.println(nyPizza.getName()+"\n");
+    AbsPizza chicagoPizza = chicagoStylePizzaStore.orderPizza("cheese");
+    System.out.println(chicagoPizza.getName());
 
 
   }
