@@ -1,5 +1,7 @@
 package com.wy.designpatterns.principle.dip;
 
+import com.wy.designpatterns.observer.IDispaly;
+
 /**
  * 【例】依赖倒置原则在“顾客购物程序”中的应用。
  *

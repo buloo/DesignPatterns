@@ -44,10 +44,23 @@
 
 单一职责同样也适用于方法。一个方法应该尽可能做好一件事情。如果一个方法处理的事情太多，其颗粒度会变得很粗，不利于重用。
 
-详细介绍：http://c.biancheng.net/view/1326.html
+详细介绍：http://c.biancheng.net/view/1327.html
 
 代码目录 principle/srp
 
-![这是图片](/com/wy/designpatterns/principle/srp/srp.png "Magic Gardens")
+<br>
+
+### 接口隔离原则
+2002 年罗伯特·C.马丁给“接口隔离原则”的定义是：客户端不应该被迫依赖于它不使用的方法（Clients should not be forced to depend on methods they do not use）。
+该原则还有另外一个定义：一个类对另一个类的依赖应该建立在最小的接口上（The dependency of one class to another one should depend on the smallest possible interface）。
+
+接口隔离原则和单一职责都是为了提高类的内聚性、降低它们之间的耦合性，体现了封装的思想，但两者是不同的：
+单一职责原则注重的是职责，而接口隔离原则注重的是对接口依赖的隔离。
+单一职责原则主要是约束类，它针对的是程序中的实现和细节；接口隔离原则主要约束接口，主要针对抽象和程序整体框架的构建。
+
+详细介绍：http://c.biancheng.net/view/1330.html
+
+代码目录 principle/isp
 
 <br>
+

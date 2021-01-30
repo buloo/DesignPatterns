@@ -3,6 +3,7 @@ package com.wy.designpatterns;
 import com.wy.designpatterns.principle.dip.BookShop;
 import com.wy.designpatterns.principle.dip.Customer;
 import com.wy.designpatterns.principle.dip.FoodShop;
+import com.wy.designpatterns.principle.isp.StuScoreManager;
 import com.wy.designpatterns.principle.lsp.Animal;
 import com.wy.designpatterns.principle.lsp.FlyBird;
 import com.wy.designpatterns.principle.lsp.Ostrich;
@@ -50,6 +51,12 @@ public class PrincipleTest {
 //    StudentWork studentWork = new StudentWork();
 //    studentWork.lifeCoaching(new Counselor());
 //    studentWork.studyCoaching(new StudyTutor());
+
+    //接口隔离原则
+    StuScoreManager.getInputModule().insert();
+    StuScoreManager.getInputModule().delete();
+    StuScoreManager.getCalculateModule().calculateTotalScore();
+    StuScoreManager.getPrintModule().printStuInfo();
 
   }
 
