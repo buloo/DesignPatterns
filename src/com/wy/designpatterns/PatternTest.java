@@ -20,11 +20,11 @@ import com.wy.designpatterns.strategy.Queen;
 import com.wy.designpatterns.strategy.SwordBehavior;
 
 /**
- * 测试用例
+ * 测试用例-设计模式
  * @Author wangyue8
  * @CreatTime 2021/1/23 13:10
  **/
-public class RootTest {
+public class PatternTest {
 
   public static void main(String[] args){
 
