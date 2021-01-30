@@ -4,6 +4,11 @@ import com.wy.designpatterns.principle.Lod.Agent;
 import com.wy.designpatterns.principle.Lod.Company;
 import com.wy.designpatterns.principle.Lod.Fan;
 import com.wy.designpatterns.principle.Lod.Star;
+import com.wy.designpatterns.principle.crp.AbsCar;
+import com.wy.designpatterns.principle.crp.Black;
+import com.wy.designpatterns.principle.crp.ElectricCar;
+import com.wy.designpatterns.principle.crp.GasolineCar;
+import com.wy.designpatterns.principle.crp.White;
 import com.wy.designpatterns.principle.dip.BookShop;
 import com.wy.designpatterns.principle.dip.Customer;
 import com.wy.designpatterns.principle.dip.FoodShop;
@@ -69,6 +74,12 @@ public class PrincipleTest {
 //    agent.setMyCompany(new Company("华谊兄弟电影公司"));
 //    agent.meeting();
 //    agent.business();
+
+    //合成复用原则
+//    AbsCar gasolineCar = new GasolineCar(new Black());
+//    AbsCar electricCar = new ElectricCar(new White());
+//    gasolineCar.move();
+//    electricCar.move();
 
   }
 
