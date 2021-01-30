@@ -187,5 +187,5 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 代码目录：factor
 
 ***
-实例源码：<https://github.com/buloo/DesignPatterns>
+源码：<https://github.com/buloo/DesignPatterns>
 <br>
