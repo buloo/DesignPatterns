@@ -2,6 +2,7 @@
 正如牛顿三大定律在经典力学中的位置一样，开闭原则是面向对象的可复用设计（Object Oriented Design或OOD）的基石。其他设计原则（里氏代换原则、依赖倒置原则、单一职责原则、接口隔离原则、迪米特法则、合成复用原则）是实现开闭原则的手段和工具。
 <br>
 <br>
+<br>
 ### 开闭原则
 开闭原则（Open Closed Principle，OCP）由勃兰特·梅耶（Bertrand Meyer）提出，他在 1988 年的
 著作《面向对象软件构造》（Object Oriented Software Construction）中
@@ -83,7 +84,7 @@
 
 <br>
 
-### 迪米特法则
+### 合成复用原则
 合成复用原则（Composite Reuse Principle，CRP）又叫组合/聚合复用原则（Composition/Aggregate Reuse Principle，CARP）。
 它要求在软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现。
 
