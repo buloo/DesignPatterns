@@ -9,6 +9,7 @@
 
 代码目录：principle/ocp
 
+<br>
 
 ### 里氏替换原则
 里氏替换原则（Liskov Substitution Principle，LSP）由麻省理工学院计算机科学实验室的里斯科夫（Liskov）女士在 1987 年的“面向对象技术的高峰会议”（OOPSLA）上
@@ -18,6 +19,8 @@
 详细介绍：http://c.biancheng.net/view/1324.html
 
 代码目录 principle/lsp
+
+<br>
 
 ### 依赖倒置原则
 依赖倒置原则（Dependence Inversion Principle，DIP）是 Object Mentor 公司
@@ -30,3 +33,17 @@
 详细介绍：http://c.biancheng.net/view/1326.html
 
 代码目录 principle/dip
+
+<br>
+
+### 单一职责原则
+单一职责原则（Single Responsibility Principle，SRP）又称单一功能原则，
+由罗伯特·C.马丁（Robert C. Martin）于《敏捷软件开发：原则、模式和实践》一书中
+提出的。这里的职责是指类变化的原因，单一职责原则规定一个类应该有且仅有一个引起它
+变化的原因，否则类应该被拆分（There should never be more than one reason for a class to change）。
+
+详细介绍：http://c.biancheng.net/view/1326.html
+
+代码目录 principle/srp
+
+<br>

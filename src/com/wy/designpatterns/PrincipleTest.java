@@ -10,6 +10,9 @@ import com.wy.designpatterns.principle.lsp.Swallow;
 import com.wy.designpatterns.principle.ocp.AbsTheme;
 import com.wy.designpatterns.principle.ocp.SeaTheme;
 import com.wy.designpatterns.principle.ocp.SkyTheme;
+import com.wy.designpatterns.principle.srp.Counselor;
+import com.wy.designpatterns.principle.srp.StudentWork;
+import com.wy.designpatterns.principle.srp.StudyTutor;
 
 /**
  *
@@ -43,7 +46,10 @@ public class PrincipleTest {
 //    customer.shopping(new BookShop());
 //    customer.shopping(new FoodShop());
 
-
+    //单一职责原则
+//    StudentWork studentWork = new StudentWork();
+//    studentWork.lifeCoaching(new Counselor());
+//    studentWork.studyCoaching(new StudyTutor());
 
   }
 
