@@ -42,8 +42,12 @@
 提出的。这里的职责是指类变化的原因，单一职责原则规定一个类应该有且仅有一个引起它
 变化的原因，否则类应该被拆分（There should never be more than one reason for a class to change）。
 
+单一职责同样也适用于方法。一个方法应该尽可能做好一件事情。如果一个方法处理的事情太多，其颗粒度会变得很粗，不利于重用。
+
 详细介绍：http://c.biancheng.net/view/1326.html
 
 代码目录 principle/srp
+
+![这是图片](/com/wy/designpatterns/principle/srp/srp.png "Magic Gardens")
 
 <br>
