@@ -1,4 +1,5 @@
 # 面向对象设计原则
+正如牛顿三大定律在经典力学中的位置一样，开闭原则是面向对象的可复用设计（Object Oriented Design或OOD）的基石。其他设计原则（里氏代换原则、依赖倒置原则、单一职责原则、接口隔离原则、迪米特法则、合成复用原则）是实现开闭原则的手段和工具。
 
 ### 开闭原则
 开闭原则（Open Closed Principle，OCP）由勃兰特·梅耶（Bertrand Meyer）提出，他在 1988 年的
@@ -61,6 +62,23 @@
 详细介绍：http://c.biancheng.net/view/1330.html
 
 代码目录 principle/isp
+
+<br>
+
+### 迪米特法则
+迪米特法则（Law of Demeter，LoD）又叫作最少知识原则（Least Knowledge Principle，LKP)，
+产生于 1987 年美国东北大学（Northeastern University）的一个名为迪米特（Demeter）的研究项目，
+由伊恩·荷兰（Ian Holland）提出，被 UML 创始者之一的布奇（Booch）普及，后来又因为在经典著作《程序员修炼之道》（The Pragmatic Programmer）提及而广为人知。
+
+迪米特法则的定义是：只与你的直接朋友交谈，不跟“陌生人”说话（Talk only to your immediate friends and not to strangers）。
+其含义是：如果两个软件实体无须直接通信，那么就不应当发生直接的相互调用，可以通过第三方转发该调用。其目的是降低类之间的耦合度，提高模块的相对独立性。
+
+迪米特法则中的“朋友”是指：当前对象本身、当前对象的成员对象、当前对象所创建的对象、当前对象的方法参数等，
+这些对象同当前对象存在关联、聚合或组合关系，可以直接访问这些对象的方法。
+
+详细介绍：http://c.biancheng.net/view/1331.html
+
+代码目录 principle/Lod
 
 <br>
 

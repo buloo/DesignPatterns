@@ -1,5 +1,9 @@
 package com.wy.designpatterns;
 
+import com.wy.designpatterns.principle.Lod.Agent;
+import com.wy.designpatterns.principle.Lod.Company;
+import com.wy.designpatterns.principle.Lod.Fan;
+import com.wy.designpatterns.principle.Lod.Star;
 import com.wy.designpatterns.principle.dip.BookShop;
 import com.wy.designpatterns.principle.dip.Customer;
 import com.wy.designpatterns.principle.dip.FoodShop;
@@ -53,10 +57,18 @@ public class PrincipleTest {
 //    studentWork.studyCoaching(new StudyTutor());
 
     //接口隔离原则
-    StuScoreManager.getInputModule().insert();
-    StuScoreManager.getInputModule().delete();
-    StuScoreManager.getCalculateModule().calculateTotalScore();
-    StuScoreManager.getPrintModule().printStuInfo();
+//    StuScoreManager.getInputModule().insert();
+//    StuScoreManager.getInputModule().delete();
+//    StuScoreManager.getCalculateModule().calculateTotalScore();
+//    StuScoreManager.getPrintModule().printStuInfo();
+
+    //迪米特法则
+//    Agent agent = new Agent();
+//    agent.setMyStar(new Star("周杰伦"));
+//    agent.setMyFans(new Fan("王月"));
+//    agent.setMyCompany(new Company("华谊兄弟电影公司"));
+//    agent.meeting();
+//    agent.business();
 
   }
 
