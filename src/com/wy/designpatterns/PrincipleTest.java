@@ -1,5 +1,8 @@
 package com.wy.designpatterns;
 
+import com.wy.designpatterns.principle.dip.BookShop;
+import com.wy.designpatterns.principle.dip.Customer;
+import com.wy.designpatterns.principle.dip.FoodShop;
 import com.wy.designpatterns.principle.lsp.Animal;
 import com.wy.designpatterns.principle.lsp.FlyBird;
 import com.wy.designpatterns.principle.lsp.Ostrich;
@@ -25,16 +28,22 @@ public class PrincipleTest {
 //    sky.display();
 //    sea.display();
 
-
     //里氏替换
-    System.out.println("燕子：");
-    FlyBird swallow = new Swallow();
-    swallow.fly(10);
-    swallow.run(3);
+//    System.out.println("燕子：");
+//    FlyBird swallow = new Swallow();
+//    swallow.fly(10);
+//    swallow.run(3);
+//
+//    System.out.println("鸵鸟：");
+//    Animal ostrich = new Ostrich();
+//    ostrich.run(20);
 
-    System.out.println("鸵鸟：");
-    Animal ostrich = new Ostrich();
-    ostrich.run(20);
+    //依赖倒置
+//    Customer customer = new Customer();
+//    customer.shopping(new BookShop());
+//    customer.shopping(new FoodShop());
+
+
 
   }
 
