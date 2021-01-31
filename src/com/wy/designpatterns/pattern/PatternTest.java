@@ -1,5 +1,8 @@
 package com.wy.designpatterns.pattern;
 
+import com.wy.designpatterns.pattern.prototype.Proto;
+import java.util.Objects;
+
 /**
  * 测试用例-设计模式
  * @Author wangyue8
@@ -9,6 +12,15 @@ public class PatternTest {
 
   public static void main(String[] args){
 
+    //原型模式
+//    Proto proto = new Proto();
+//    try {
+//      Proto proto1 = (Proto) proto.clone();
+//      System.out.println("proto = " + proto.toString());
+//      System.out.println("proto1 = " + proto1.toString());
+//    } catch (CloneNotSupportedException e) {
+//      e.printStackTrace();
+//    }
 
     //策略模式
     //不同的角色，使用不同的武器，可以随意更换。例如国王默认使用宝剑，但是也可以更换成匕首。
@@ -55,8 +67,6 @@ public class PatternTest {
 //    System.out.println(nyPizza.getName()+"\n");
 //    AbsPizza chicagoPizza = chicagoStylePizzaStore.orderPizza("cheese");
 //    System.out.println(chicagoPizza.getName());
-
-
   }
 
 }
