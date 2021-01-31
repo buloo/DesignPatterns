@@ -1,4 +1,4 @@
-# Head First设计模式 读书笔记
+# 设计模式
 
 #### 1. 策略模式
 官方定义：定义算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。<br>
@@ -38,7 +38,6 @@ s2.performDo();执行Behavior3
 ```
 <br>
 <br>
-学习时间：2021/1/21-1/22 <br>
 代码目录：strategy
 
 ***
@@ -78,7 +77,6 @@ Observer3收到更新
 ```
 <br>
 <br>
-学习时间：2021/1/23 <br>
 代码目录：observer
 
 ***
@@ -112,7 +110,6 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 ```
 <br>
 <br>
-学习时间：2021/1/27 <br>
 代码目录：decorator
 
 ***
@@ -148,7 +145,6 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 ```
 <br>
 <br>
-学习时间：2021/1/27 <br>
 代码目录：factor
 
 ***
@@ -183,7 +179,6 @@ componet1 = new Decorator4(componet1);//装饰一个新扩展
 ```
 <br>
 <br>
-学习时间：2021/1/28 <br>
 代码目录：factor
 
 ***

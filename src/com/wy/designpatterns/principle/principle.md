@@ -54,6 +54,7 @@
 <br>
 
 ### 接口隔离原则
+接口隔离原则（Interface Segregation Principle，ISP）。
 2002 年罗伯特·C.马丁给“接口隔离原则”的定义是：客户端不应该被迫依赖于它不使用的方法（Clients should not be forced to depend on methods they do not use）。
 该原则还有另外一个定义：一个类对另一个类的依赖应该建立在最小的接口上（The dependency of one class to another one should depend on the smallest possible interface）。
 
